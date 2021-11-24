@@ -17,6 +17,8 @@ ENV NEXT_TELEMETRY_DISABLED 1
 # prevent the reinstallation of node modules at every changes in the source code
 COPY package.json yarn.lock ./
 RUN yarn
+# add off vu cli
+# RUN yarn global add @vue/cli
 
 COPY . ./
 
