@@ -49,7 +49,7 @@ class Book
     public string $author = '';
 
     /** The publication date of this book.
-     * @ORM\Column(type="datetime_immutable")
+     * @ORM\Column(type="datetime")
      */
     #[Assert\NotBlank]
     public ?\DateTimeInterface $publicationDate = null;
