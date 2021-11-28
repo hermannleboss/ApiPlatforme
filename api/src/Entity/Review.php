@@ -40,7 +40,7 @@ class Review
     public string $author = '';
 
     /** The date of publication of this review.
-     *@ORM\Column(type="datetime_immutable")
+     *@ORM\Column(type="datetime")
      */
     #[Assert\NotNull]
     public ?\DateTimeInterface $publicationDate = null;
